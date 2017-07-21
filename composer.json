@@ -15,7 +15,7 @@
     "php": ">=5.3.3",
     "symfony/symfony": "^3.0",
     "symfony/assetic-bundle": "^2.3",
-    "twig/extensions": "1.0.*",
+    "twig/extensions": "^1.4",
     "jms/serializer-bundle" : "^1.0"
   },
   "autoload": {
