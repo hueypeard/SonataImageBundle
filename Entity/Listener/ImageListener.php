@@ -3,11 +3,14 @@
 namespace ZenSide\SonataImageBundle\Entity\Listener;
 
 use Doctrine\Common\Persistence\Event\LifecycleEventArgs;
-use Symfony\Component\DependencyInjection\ContainerAware;
+use Symfony\Component\DependencyInjection\ContainerAwareTrait;
+use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use ZenSide\SonataImageBundle\Entity\Image;
 
-class ImageListener extends ContainerAware
+class ImageListener implements ContainerAwareInterface
 {
+    use ContainerAwareTrait;
+    
     const UPLOAD_FOLDER = 'uploads/images/',
         MAX_WIDTH = 1500,
         MAX_HEIGHT = 1000;
