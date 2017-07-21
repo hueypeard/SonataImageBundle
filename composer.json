@@ -19,7 +19,7 @@
     "jms/serializer-bundle" : "^1.0"
   },
   "autoload": {
-    "psr-4": { "ZenSide\\SonataImageBundle\":"" }
+    "psr-4": { "ZenSide\\SonataImageBundle\\":"" }
   },
   "minimum-stability":"stable"
 }
